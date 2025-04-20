@@ -1,0 +1,164 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff0f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #8e44ad; /* Hazzle purple */
+  color: white;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+section {
+  padding: 4rem;
+  background-color: white;
+  color: #FFD700;
+  font-family: 'Dancing Script', cursive;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.gallery, .reasons, .messages, .surprise {
+  padding: 2rem 1rem;
+  font-size:1.5rem;
+}
+
+.messages {
+  background-color: #e6ccff; /* light purple */
+  padding: 30px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reasons {
+  background-image: url('heart.png'); /* Replace with the actual path to your heart image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 2px #000;
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.gallery h2, .reasons h2, .messages h2, .surprise h2 {
+  color: #8e44ad /* Pinkish purple for specific h2 headers */
+}
+
+/* Ensuring Hazzle Purple color for all h2 headers */
+h2 {
+ font-size: 3rem;
+  color: #8e44ad; /* Hazzle Purple color */
+ font-family: 'cursive';
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* space between images */
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.images img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+p {
+  font-family: 'cursive';
+  font-size: 2rem;
+  color: black;
+}
+
+ul {
+  list-style-type: heart;
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #8e44ad;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.memories {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #8e44ad; /* Hazzle purple */
+  font-family: 'Poppins', sans-serif;
+}
+
+.memory-block {
+  margin-bottom: 3rem;
+  border-top: 2px solid #8e44ad;
+  padding-top: 2rem;
+}
+
+.memory-block h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color:  #7851A9; /* Royal golden */
+}
+
+.memory-block .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between images */
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 100%; /* Allow full width usage */
+}
+
+.memory-block .images img {
+  flex: 1 1 calc(25% - 1rem); /* 4 images per row with space */
+  max-width: calc(25% - 1rem);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  object-fit: cover;
+  min-width: 150px; /* Prevent them from getting too small */
+}
+
+.memory-block .images img:hover {
+  transform: scale(1.05);
+}
